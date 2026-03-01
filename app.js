@@ -7,3 +7,5 @@ score = 10;             // OK - reassignment allowed for let
 
 const MAX = 100;
 // MAX = 200;           // TypeError: Assignment to constant variable
+
+let homeAddress = "Your home address"; // I declared the variable homeAddress and assigned a string value to it
