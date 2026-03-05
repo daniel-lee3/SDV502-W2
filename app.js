@@ -94,6 +94,7 @@ if (score >= 90) {
 const day = "Monday";
 switch (day) {
     case "Monday":
+        console.log("ACTUAL");
     case "Tuesday":
         console.log("Start of week");
         break;
