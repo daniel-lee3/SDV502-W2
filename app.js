@@ -2,8 +2,8 @@
 //let age = 25;           // Block-scoped, can be reassigned
 const PI = 3.14159;     // Block-scoped, cannot be reassigned
 
-let score = 0;
-score = 10;             // OK - reassignment allowed for let
+// let score = 0;
+// score = 10;             // OK - reassignment allowed for let
 
 const MAX = 100;
 // MAX = 200;           // TypeError: Assignment to constant variable
@@ -77,3 +77,29 @@ const msg2 = `Hello, ${name} You are ${age} years old.`;
 
 // Any expression works inside ${}
 const total = `Price: ${(12.99 * 3).toFixed(2)}`; // "Price: 38.97"
+
+// if / else if / else
+const score = 75;
+if (score >= 90) {
+    console.log("A");
+} else if (score >= 80) {
+    console.log("B");
+} else if (score >= 70) {
+    console.log("C")
+} else {
+    console.log("D")
+}
+
+// switch - great for exact matches
+const day = "Monday";
+switch (day) {
+    case "Monday":
+    case "Tuesday":
+        console.log("Start of week");
+        break;
+    case "Friday":
+        console.log("TGIF");
+        break;
+    default:
+        console.log("Midweek")
+}
